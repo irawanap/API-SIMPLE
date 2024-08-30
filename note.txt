@@ -1,0 +1,25 @@
+// (step 1) How to Install all package for nodejs backend
+
+1. install NPM (Node Package Manager)
+2. install express and body parser (read a documentation for this insttallation)
+3. install babel js (like a tailwind css) read a documentation for insttallation
+4. install ava and nodemon (read a documentation)
+
+
+// Architecture of API (business logic)
+
+MVC (Model-View-Controller)
+
+SANDWICH METHOD
+    - Controller (Brain)
+        API routes and endpoint
+    - Service layer (GUI-view)
+        for bussines logic
+    - Data Access layer (Model/Data)
+        for working with a database
+
+    *preference the architecture 
+        (n tier /4tier)
+        => https://www.codementor.io/@evanbechtol/node-service-oriented-architecture-12vjt9zs9i
+
+    * u must know about DDD (Domain-Driven Design)
