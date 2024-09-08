@@ -41,7 +41,7 @@ const update = (userId, newDetails) => {
 }
 
 const insert = (details) => {
-    const newUser = { ...details, id: users.length > 0 ? users[users.length - 1].id + 1 : 1 };
+    const newUser = { ...details, id: users.length + 1 };
     users.push(newUser);
 
     return newUser;

@@ -14,7 +14,7 @@ const updateUser = (UserId, details) => {
 };
 
 const addUser = (details) => {
-    return userDao.update(UserId, details);
+    return userDao.insert(details);
 };
 
 const removeUser = (UserId) => {

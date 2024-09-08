@@ -46,18 +46,19 @@ router.get('/:id', (req, res) => {
     )
 });
 
-router.post('/add', (req,res) => {
+router.post('/', (req,res) => {
     const { body: user } = req;
 
-    const addUser = userService.addUser(user);
+    const addedUser = userService.addUser(user);
 
     return res.status(StatusCodes.CREATED).send( {
         status: STATUS.success,
-        data: addUser,
+        message: addedUser,
     });
+    
 });
 
-router.put('/update/:id', (req,res) => {
+router.put('/:id', (req,res) => {
     const { body: user } = req;
 
     const id = parseInt(req.params.id, 10)
