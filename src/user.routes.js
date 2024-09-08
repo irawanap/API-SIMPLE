@@ -36,8 +36,8 @@ router.get('/:id', (req, res) => {
                 data: user,
             }
         );
-    }
-
+    } 
+    
     return res.status(StatusCodes.NOT_FOUND).send(
         {
             status: STATUS.failure,
@@ -49,11 +49,11 @@ router.get('/:id', (req, res) => {
 router.post('/add', (req,res) => {
     const { body: user } = req;
 
-    const addedUser = userService.addUser(user);
+    const addUser = userService.addUser(user);
 
     return res.status(StatusCodes.CREATED).send( {
         status: STATUS.success,
-        data: addedUser,
+        data: addUser,
     });
 });
 
