@@ -19,7 +19,7 @@ const addUser = (details) => {
 
 const removeUser = (UserId) => {
     return userDao.remove(UserId);
-}
+};
 
 export default {
     getUser,
