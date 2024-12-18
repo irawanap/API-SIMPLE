@@ -1,25 +1,15 @@
 import userDao from '../models/persistence/user.dao';
 
 
-const getUser = (UserId) => {
-    return userDao.get(UserId);
-};
+const getUser = (UserId) => userDao.get(UserId);
 
-const getAllUsers = () => {
-    return userDao.getAll();
-};
+const getAllUsers = () => userDao.getAll();
 
-const updateUser = (UserId, details) => {
-    return userDao.update(UserId, details);
-};
+const updateUser = (UserId, details) => userDao.update(UserId, details);
 
-const addUser = (details) => {
-    return userDao.insert(details);
-};
+const addUser = (details) => userDao.insert(details);
 
-const removeUser = (UserId) => {
-    return userDao.remove(UserId);
-};
+const removeUser = (UserId) => userDao.remove(UserId);
 
 export default {
     getUser,
