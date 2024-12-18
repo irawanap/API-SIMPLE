@@ -10,9 +10,10 @@ import compression from 'compression';
 
 const app = express();
 const port = 3000;
+
 const limiter = rateLimit({
     windowMs: 60 * 1000, //1minutes
-    max: 100, //Limit each IP to 100 req per 'Window' (here, per 15 minutes)
+    max: 10, //Limit each IP to 100 req per 'Window' (here, per 15 minutes)
 })
 
 app.use(compression());
